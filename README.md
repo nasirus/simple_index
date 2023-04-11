@@ -51,7 +51,7 @@ deploy the Simple Index using Docker:
 
     - This example uses Azure OpenAI LLM by default. If you want to use another LLM, you can set up
       any [Langchain model](https://python.langchain.com/en/latest/modules/models/llms/integrations.html)
-      in [this file](https://github.com/nasirus/simple_index/blob/main/llmhelper.py#L12) .
+      in [this file](https://github.com/nasirus/simple_index/blob/master/llmhelper.py#L12) .
 
     - `OPENAI_API_BASE` and `OPENAI_API_TYPE` are required only if you use AzureOpenAI
 
@@ -108,7 +108,9 @@ you can access the application at http://127.0.0.1:5000.
 Example :
 
 `python server.py` : run with default folder scanning /data/local
+
 `python server.py --module_name MyProject` : run with folder scanning /data/MyProject
+
 `python server.py --module_name MyProject --reload` : run with folder scanning /data/MyProject and reload index if exist (use it if you want refresh index)
 
 ### b - Run console chat (Command line for interacting):
