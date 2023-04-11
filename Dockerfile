@@ -20,10 +20,10 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 COPY requirements.txt .
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Install detectron2, used to read JPG file
-RUN pip install 'git+https://github.com/facebookresearch/detectron2.git'
+RUN pip install --no-cache-dir 'git+https://github.com/facebookresearch/detectron2.git'
 
 # Copy the rest of the application into the container
 COPY . .

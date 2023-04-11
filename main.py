@@ -38,7 +38,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Chatbot and QA")
     parser.add_argument("--bot_mode", choices=["chat", "qa"], default="chat",
                         help="Choose the mode for the bot: 'chat' or 'qa'")
-    parser.add_argument("--question", default="what is github helper?", help="The question to be answered in 'qa' mode")
+    parser.add_argument("--question", help="The question to be answered in 'qa' mode")
     parser.add_argument('--reload', action='store_true', help='Reload data')
     parser.add_argument('--module_name', type=str, default="local",
                         help='The name of the module to import and use')
